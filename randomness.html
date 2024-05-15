@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomness</title>
+    <style>
+        .test {
+            font-size: 50px;
+            color: black;
+            font-weight: thin;
+        }
+        .test-bg {
+            background-color: white;
+        }
+        .button-simple {
+            background-color: white;
+        }
+        .button-crazy {
+            background-color: purple;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="simple">
+        <h1>There is nothing here... not yet at least</h1>
+        <button class="button-simple" onclick="simple()">Simple</button>
+    </div>
+    <button onclick="old()">Old Style</button>
+    <button class="button-crazy" onclick="crazy()">CRAZY STYLE</button>
+
+    <script>
+        function simple() {
+            document.querySelector('.test').style.fontSize = "50px"
+            document.querySelector('.test').style.color = "black"
+            document.querySelector('.test').style.fontWeight = "thin"
+            document.querySelector('.test-bg').style.backgroundColor = "white"
+        }
+        function old() {
+            document.querySelector('.test').style.fontSize = "35px"
+            document.querySelector('.test').style.color = "gold"
+            document.querySelector('.test').style.fontWeight = "bold"
+            document.querySelector('.test-bg').style.backgroundColor = "grey"
+        }
+        function crazy() {
+            document.querySelector('.test').style.fontSize = "60px"
+            document.querySelector('.test').style.color = "green"
+            document.querySelector('.test').style.fontWeight = "thin"
+            document.querySelector('.test-bg').style.backgroundColor = "aqua"
+        }
+    </script>
+</body>
+</html>
