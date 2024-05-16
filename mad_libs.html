@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan's Madlibs</title>
+    <style>
+        * {
+            font-family: Papyrus;
+        }
+
+        #cat {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The most epic madlibs game you'll ever see.</h1>
+    <p>Enter some words and take the most epic journey in all of existence!</p>
+    <img src="imgs/sideEyeCat.jpeg" alt="side eyed gato" id="cat">
+    <br>
+    <h2>MadLibs!</h2>
+    <label>Color:</label>
+    <input id="color" type="color">
+    <br>
+    <label>Male name:</label>
+    <input id="malename" type="text">
+    <br>
+    <label>Time:</label>
+    <input id="time" type="time">
+    <br>
+    <label>Place:</label>
+    <input id="place" type="text">
+    <br>
+    <label>Car:</label>
+    <input id="car" type="text">
+    <br>
+    <label>Former U.S. President:</label>
+    <input type="text" id="president">
+    <br>
+    <label>Pet:</label>
+    <input type="text" id="pet">
+    <br>
+    <label>Celebrity:</label>
+    <input type="text" id="celebrity">
+    <br>
+    <label>Music Genre:</label>
+    <input type="text" id="music">
+    <br>
+    <label>Your full name:</label>
+    <input type="text" id="name">
+    <br>
+    <br>
+    <button onclick="submit()">Make a poggers story NOW</button>
+    <br>
+    <h2 id="yourstory"></h2>
+    <h3 id="madlibs"></h3>
+    <h4 id="thanks"></h4>
+    <script>
+        let color = document.getElementById("color")
+        let malename = document.getElementById("malename")
+        let time = document.getElementById("time")
+        let place = document.getElementById("place")
+        let car = document.getElementById("car")
+        let president = document.getElementById("president")
+        let pet = document.getElementById("pet")
+        let celebrity = document.getElementById("celebrity")
+        let music = document.getElementById("music")
+        let name = document.getElementById("name")
+
+        function submit() {
+            yourstory.innerText = 'Your Story:';
+            document.body.style.backgroundColor = color.value;
+            madlibs.innerText = 'It was a just a usual day. On the nightstand laid the ' + color.value + '-colored pills. ' + malename.value + ' woke up at ' + time.value + ' as he woke up in ' + place.value + '. Suddenly he felt energetic and went outside, going in his ' + car.value + ', and crashing his car right into ' + president.value + '. He ran from the scene to ride his ' + pet.value + ' to his favorite concert. He had hoped to see ' + celebrity.value + ' at the concert, and luckily did, only to find out that they were singing ' + music.value + ' songs. He then threw his backpack in anger and a bomb exploded, killing 40 and injuring 87. He did all of this under the order of ' + name + '.'
+            thanks.innerText = 'Thank you for playing! Feel free to create a new story again by changing some words!'
+        }
+    </script>
+</body>
+
+</html>

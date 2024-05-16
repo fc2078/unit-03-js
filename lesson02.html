@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" lang="en">
+    <title>Lesson 02</title>
+</head>
+<body>
+    <h1>Lesson 02 - User Interactivity</h1>
+    <label>Name:</label>
+    <input id="name">
+    <br>
+    <br>
+    <button onclick="clickMe()">Submit</button>
+    <h1 id="head"></h1>
+    <script>
+        let nameInput = document.getElementById("name")
+
+        function clickMe () {
+            console.log(nameInput.value)
+            head.innerText = 'Hi, ' + nameInput.value + '!'
+        }
+    </script>
+    
+</body>
+</html>
